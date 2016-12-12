@@ -10,34 +10,26 @@ import javax.swing.JOptionPane;
 public class RefactorizarCOD1 {
 
     public static void main(String[] args) {
-        String n;
+        String nombre;
+        int mes, dia, hora, ano;
 
-int m;
-
-int d;
-
-int h;
-
-int a;
-
-
-n = JOptionPane.showInputDialog ("Escriba su nombre: ");
+nombre = JOptionPane.showInputDialog ("Escriba su nombre: ");
  
-a = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad"));
+ano = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad"));
 
  
-m = (a*12);
+mes = (ano*12);
 
-d = (a*365);
+dia = (ano*365);
 
-h = (d*24);
+hora = (dia*24);
 
  
- JOptionPane.showMessageDialog(null,  "Meses: "  +m,"Numero de meses vividos de " +n,JOptionPane.INFORMATION_MESSAGE);
+ JOptionPane.showMessageDialog(null,  "Meses: "  +mes,"Numero de meses vividos de " +nombre,JOptionPane.INFORMATION_MESSAGE);
 
- JOptionPane.showMessageDialog(null, "Días: " +d,"Numero de días vividos de "+n,JOptionPane.INFORMATION_MESSAGE);
+ JOptionPane.showMessageDialog(null, "Días: " +dia,"Numero de días vividos de "+nombre,JOptionPane.INFORMATION_MESSAGE);
 
- JOptionPane.showMessageDialog(null, "Horas: " +h,"Numero de horas vividos de "+n,JOptionPane.INFORMATION_MESSAGE);
+ JOptionPane.showMessageDialog(null, "Horas: " +hora,"Numero de horas vividos de "+nombre,JOptionPane.INFORMATION_MESSAGE);
 
      System.exit (0);
 }
