@@ -8,15 +8,15 @@ import javax.swing.JOptionPane;
  */
 public class LoVivido {
 
-    int ano; String nombre;
+    int edad; String nombre;
     
     public void registrarPersona (){
         
         nombre = JOptionPane.showInputDialog ("Escriba su nombre: ");
-        ano = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad"));
+        edad = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad"));
     }
     public void calcularLoVivido (){
-        int mes = (ano*12); int dia = (ano*365); int hora = (dia*24);
+        int mes = (edad*12); int dia = (edad*365); int hora = (dia*24);
     
     JOptionPane.showMessageDialog(null,  "Meses: "  +mes,"Numero de meses vividos de " +nombre,JOptionPane.INFORMATION_MESSAGE);
 
