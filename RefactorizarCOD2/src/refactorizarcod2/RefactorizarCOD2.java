@@ -9,15 +9,9 @@ public class RefactorizarCOD2 {
 
     
     public static void main(String[] args) {
-       int j;
+       int j = 8, f, i;
 
-    int f;
-
-   j = 8;    
-
-   int i;
-
-   if (j == 0)
+if (j == 0)
 
 f = 1;
 
