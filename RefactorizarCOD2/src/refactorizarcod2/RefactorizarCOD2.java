@@ -1,34 +1,32 @@
 
 package refactorizarcod2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Brais Núñez
  */
 public class RefactorizarCOD2 {
 
-    
-    public static void main(String[] args) {
-       int j = 8, f, i;
+     public static void main(String[] args) {
+       int f, i;
 
-if (j == 0)
+       int j = Integer.parseInt(JOptionPane.showInputDialog("Introducir valor de j"));
+       
+        if (j == 0)
 
-f = 1;
+            f = 1;
 
-   else
+        else {
 
-   {
+            f = 1;
 
-f = 1;
-
-for (i = j; i >= 1; i--)
-
-{
-    f = f * i;
-
-}
-   }    
-System.out.println(f); 
+        for (i = j; i >= 1; i--) {
+            f = f * i;
+        }
+        }    
+        System.out.println(f); 
 }
 }
     
