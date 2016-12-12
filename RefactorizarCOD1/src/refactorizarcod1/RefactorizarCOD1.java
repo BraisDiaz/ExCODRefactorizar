@@ -11,7 +11,7 @@ public class RefactorizarCOD1 {
         
         LoVivido persona1 = new LoVivido();
         persona1.registrarPersona();
-        persona1.calcularLoVivido();
+        persona1.visualizarLoVivido();
        
 }
     }
