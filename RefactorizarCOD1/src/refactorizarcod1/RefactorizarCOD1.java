@@ -12,9 +12,6 @@ public class RefactorizarCOD1 {
     public static void main(String[] args) {
         String n;
 
-String e;
-
-
 int m;
 
 int d;
@@ -25,11 +22,8 @@ int a;
 
 
 n = JOptionPane.showInputDialog ("Escriba su nombre: ");
-
-e = JOptionPane.showInputDialog ("Escriba su edad: ");
-
  
-a = Integer.parseInt (e);
+a = Integer.parseInt(JOptionPane.showInputDialog("Escriba su edad"));
 
  
 m = (a*12);
